@@ -1,8 +1,7 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
-import dev.nithin.BookMyShow.models.constants.SeatStatus;
-import dev.nithin.BookMyShow.models.constants.SeatType;
-import jakarta.persistence.ElementCollection;
+import dev.nithin.BookMyShow.model.constants.SeatStatus;
+import dev.nithin.BookMyShow.model.constants.SeatType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -13,14 +12,12 @@ import lombok.Setter;
 @Getter
 @Entity
 public class Seat extends BaseModel{
-    private int row;
-    private int column;
+    private int rowNo;
+    private int columnNo;
     private String seatNumber;
     @Enumerated(EnumType.STRING)
     private SeatType seatType;
     @Enumerated(EnumType.STRING)
     private SeatStatus seatStatus;
-
-
 
 }

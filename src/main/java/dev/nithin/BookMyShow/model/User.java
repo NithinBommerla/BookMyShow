@@ -1,4 +1,4 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity // (name = "BMS_User") Uncomment in case we want to give a custom name to Table different from Class name
 public class User extends BaseModel {
     private String name;
     private String email;

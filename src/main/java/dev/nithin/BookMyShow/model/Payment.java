@@ -1,9 +1,8 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
-import org.xml.sax.Locator;
 
 import java.time.LocalDateTime;
 

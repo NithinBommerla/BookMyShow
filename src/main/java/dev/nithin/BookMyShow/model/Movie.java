@@ -1,4 +1,4 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;

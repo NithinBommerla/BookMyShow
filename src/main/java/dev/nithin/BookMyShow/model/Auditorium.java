@@ -1,6 +1,6 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
-import dev.nithin.BookMyShow.models.constants.AuditoriumFeatures;
+import dev.nithin.BookMyShow.model.constants.AuditoriumFeatures;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

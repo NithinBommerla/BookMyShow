@@ -1,6 +1,6 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
-import dev.nithin.BookMyShow.models.constants.ShowSeatStatus;
+import dev.nithin.BookMyShow.model.constants.ShowSeatStatus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -13,7 +13,9 @@ import lombok.Setter;
 @Entity
 public class ShowSeat extends BaseModel {
     private int price;
+    @ManyToOne
     private Show show;
+    @ManyToOne
     private Seat seat;
     @Enumerated(EnumType.STRING)
     private ShowSeatStatus showSeatStatus;

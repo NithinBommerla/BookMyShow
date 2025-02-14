@@ -1,6 +1,6 @@
-package dev.nithin.BookMyShow.models;
+package dev.nithin.BookMyShow.model;
 
-import dev.nithin.BookMyShow.models.constants.ShowStatus;
+import dev.nithin.BookMyShow.model.constants.ShowStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "BMS_Show")
 public class Show extends BaseModel {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
